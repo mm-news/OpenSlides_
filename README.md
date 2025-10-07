@@ -13,10 +13,19 @@ managing and projecting agenda, motions and elections of an assembly. See
 https://openslides.com for more information.
 
 
+## Quick Start
+
+To quickly set up and start OpenSlides, simply run:
+
+    $ ./start_program.sh
+
+This script will automatically download the manage tool, set up the instance,
+pull Docker images, and start all services.
+
 ## Installation
 
-To set up an OpenSlides 4 instance, please follow our [install
-instructions](INSTALL.md).
+For detailed installation instructions and configuration options, please follow
+our [install instructions](INSTALL.md).
 
 
 ## Development
