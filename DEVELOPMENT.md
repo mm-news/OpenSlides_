@@ -29,6 +29,12 @@ or access the full stack on
 
 Login as admin with ´admin´ as both username and password.
 
+## GitHub Codespaces
+
+When running OpenSlides in GitHub Codespaces, the development setup automatically detects the Codespaces environment and disables local HTTPS. This is necessary because GitHub Codespaces port forwarding terminates HTTPS at the Codespace proxy and forwards plain HTTP to the local service. The automatic detection prevents the "Client sent an HTTP request to an HTTPS server" error when accessing the forwarded port.
+
+You can access the application through the forwarded port URL provided by Codespaces (e.g., `https://<codespace-name>-8000.app.github.dev`).
+
 ## Running tests
 
 To run all tests of all services, execute `run-service-tests`.
